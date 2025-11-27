@@ -1,0 +1,8 @@
+name: Output Info
+on: worlflow_dispatch
+jobs:
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Message
+              run: echo "${{ toJson(github)}}"
